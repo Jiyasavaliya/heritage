@@ -2,58 +2,62 @@
 using namespace std;
 
 class school{
+	
   private:
-	  
-	  int roll_no;
+  	
+	  int id_card;
 	  char name[32];
 	  
-	  public:	  
-	  void data(){
+	  public:
+	     void data(){
 	  	
-	  	cout<<"school roll no : ";
-	  	cin>>roll_no;
+	  	cout<<"school id card : ";
+	  	cin>>id_card;
 	  	cout<<"school name : ";
 	  	cin>>name;
-	  }	};
+	  }	
+};
 
 class collage{
    
       private:
+      	
 	  int id_card;
-	  char code[88];
+	  char name[88];
 	  
-	  public:
-	  void data(){
+	  public:	
+	     void data(){
 	  	
 	  	cout<<"collage id card : ";
 	  	cin>>id_card;
-	  	cout<<"collage code : ";
-	  	cin>>code;
-	  	}	};
+	  	cout<<"collage name : ";
+	  	cin>>name;
+	  	}
+};
 
 class student :  public school, public collage{
 
 
    private :
    	
-   	int student_id;
-   	int student_code;
+   	int id_card;
+   	char name[44];
    	
-   	public: 
-   		
-		void data(){
+   	public:
+	     void data(){
 
-		cout<<"student id  : ";
-	  	cin>>student_id;
-	  	cout<<"student code : ";
-	  	cin>>student_code;
+		cout<<"student id card  : ";
+	  	cin>>id_card;
+	  	cout<<"student name : ";
+	  	cin>>name;
 	  	
 	}
 };
 int main(){
 	
-   student obj;  
-    obj.school::data();
+        student obj;  
+        
+	obj.school::data();
 	obj.collage::data();
 	obj.student::data();
 	 
