@@ -12,11 +12,11 @@ class A {
     public:
     	void setter(){
     	
-			cout<<"enter age: ";
+			cout<<"enter age : ";
 			cin>>age;
-			cout<<"enter name: ";
+			cout<<"enter name : ";
 			cin>>name;
-			cout<<"enter role: ";
+			cout<<"enter role : ";
 			cin>>role;		
 					}
 };
@@ -29,9 +29,9 @@ class B : public A{
 		public:
 			void setter(){
 			
-			cout<<"enter salary: ";
+			cout<<"enter salary : ";
 			cin>>salary;
-			cout<<"enter job: ";
+			cout<<"enter job : ";
 			cin>>job;		
 			
 			
@@ -52,7 +52,7 @@ class C : public B {
 		void setter1(){
 	
 	       
-		    cout<<"comp name : ";
+		        cout<<"comp name : ";
 			cin>>comp_name;
 			cout<<"address : ";
 			cin>>address;		
@@ -62,9 +62,9 @@ class C : public B {
 		 			
 		void getter1(char n[], char r[], int s){
 	
-	      strcpy(name,n);	
-          strcpy(role,r);	
-          salary=s;
+	   strcpy(name,n);	
+           strcpy(role,r);	
+           salary=s;
           
           cout<<name<<endl<<role<<endl<<salary<<endl;
 		
@@ -76,7 +76,7 @@ class D : public C {
 		
 		public:
 			
-        	 char email[50];
+        	         char email[50];
 			 char contect[50];
 			 int id;
 			 char experience[50];
@@ -90,7 +90,7 @@ class D : public C {
 		void setter2(){
 	
 	       
-		    cout<<"comp email : ";
+		        cout<<"comp email : ";
 			cin>>email;
 			cout<<"contect : ";
 			cin>>contect;		
@@ -101,12 +101,12 @@ class D : public C {
 			 	
 		void getter2(int i, char e[], char c[], char a[], char p[], char v[]){
 	
-	      id=i;	     
-		  strcpy(experience,e);	
+          id=i;	     
+	  strcpy(experience,e);	
           strcpy(comp_name,c);	
           strcpy(address,a);	
           strcpy(email,p);	
-		  strcpy(contect,v);	
+          strcpy(contect,v);	
           
           cout<<id<<endl<<experience<<endl<<comp_name<<endl<<address<<endl<<email<<endl<<contect<<endl;
 		
@@ -126,7 +126,7 @@ int main() {
     obj1.setter();
 
     obj2.setter1();	
-	obj2.getter1("name : shresha","role : doctor",200000);
+    obj2.getter1("name : shresha","role : doctor",200000);
     
     obj3.setter2();
     obj3.getter2(2,"experience : 1 year","comp name : jio","address : crietion","email : abc2@gmail.com","contect : 123455555");
