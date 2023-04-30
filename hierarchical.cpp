@@ -53,10 +53,10 @@ using namespace std;
  	zebra obj1;
  	dolphin obj2;
  	
- 	obj1.set_value("zebra");
+ 	obj1.set_value("zebra ");
  	obj1.origin();
  	
- 	obj2.set_value("dolphin");
+ 	obj2.set_value("dolphin ");
  	obj2.origin();
  	
  	return 0;
