@@ -9,7 +9,7 @@ class school{
 	  char name[32];
 	  
 	  public:
-	     void data(){
+	     void schooldata(){
 	  	
 	  	cout<<"school id card : ";
 	  	cin>>id_card;
@@ -26,7 +26,7 @@ class collage{
 	  char name[88];
 	  
 	  public:	
-	     void data(){
+	     void collagedata(){
 	  	
 	  	cout<<"collage id card : ";
 	  	cin>>id_card;
@@ -44,7 +44,7 @@ class student :  public school, public collage{
    	char name[44];
    	
    	public:
-	     void data(){
+	     void studentdata(){
 
 		cout<<"student id card  : ";
 	  	cin>>id_card;
@@ -57,9 +57,9 @@ int main(){
 	
         student obj;  
         
-	obj.school::data();
-	obj.collage::data();
-	obj.student::data();
+	obj.school::schooldata();
+	obj.collage::collagedata();
+	obj.student::studentdata();
 	 
    	
 }
